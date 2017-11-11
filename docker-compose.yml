@@ -4,7 +4,7 @@ services:
     build: elasticsearch/
     container_name: elasticsearch
     environment:
-      - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
+      - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
     ulimits:
       memlock:
         soft: -1
